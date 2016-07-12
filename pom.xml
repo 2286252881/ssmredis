@@ -26,6 +26,9 @@
 			<version>1.6</version>
 		</dependency>
 		<!-- jedis start -->
+		<!-- json工具类 start-->
+			
+		<!-- json工具类 end-->
 	</dependencies>
 	<build>
 		<finalName>ssmredis</finalName>

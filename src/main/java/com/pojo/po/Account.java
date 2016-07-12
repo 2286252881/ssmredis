@@ -1,8 +1,9 @@
 package com.pojo.po;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Account {
+public class Account implements Serializable {
     private Integer id;
 
     private String username;
@@ -52,4 +53,10 @@ public class Account {
     public void setFlag(String flag) {
         this.flag = flag == null ? null : flag.trim();
     }
+
+	@Override
+	public String toString() {
+		return "[id=" + id + ", username=" + username + ", pwd=" + pwd + ", createdate=" + createdate
+				+ ", flag=" + flag + "]";
+	}
 }
